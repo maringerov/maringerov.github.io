@@ -31,11 +31,11 @@
       </div>
 
       <footer>
-        <small>&copy; {{ 'now' | date: "%Y" }} marin gerov</small>
+        <small>&copy; {{ 'now' | date: "%Y" }} <img src="/assets/m-logo.png" alt="Marin Gerov Logo"></small>
       </footer>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <label for="sidebar-checkbox" class="sidebar-toggle"><small>{% if page.toc %}Table of contents{% else %}menu{% endif %}</small></label>
 
     <script>
 

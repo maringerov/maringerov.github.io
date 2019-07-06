@@ -114,7 +114,7 @@ a:focus {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   margin-bottom: .5rem;
-  font-weight: 300;
+  font-weight: 600;
   color: $heading-color;
   letter-spacing: -.025rem;
   line-height: 1.25;
@@ -253,6 +253,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  font-weight: 300;
   line-height: .777em;
 }
 
@@ -354,6 +355,10 @@ h3.masthead-title {
 
 .sidebar-item {
   padding: 1rem;
+
+  img {
+    width: 50px;
+  }
 }
 
 .sidebar-item p:last-child {
@@ -412,31 +417,11 @@ a.sidebar-nav-item:focus {
   cursor: pointer;
 }
 
-.sidebar-toggle:before {
-  display: inline-block;
-  width: 1rem;
-  height: .75rem;
-  content: "";
-  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-}
-
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
   background-color: #555;
-}
-
-.sidebar-toggle:active:before,
-#sidebar-checkbox:focus ~ .sidebar-toggle:before,
-#sidebar-checkbox:checked ~ .sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
 }
 
 @media (min-width: 30.1em) {
@@ -849,6 +834,12 @@ li.prose-indent {
 footer {
   text-align: center;
   padding: 1.2em;
+
+  img {
+    width: 65px;
+    display: inline-block;
+    margin-bottom: -2px;
+  }
 }
 
 .post-subscribe {
