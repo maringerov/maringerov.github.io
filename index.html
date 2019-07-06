@@ -1,31 +1,24 @@
 ---
 layout: default
-title: "marin gerov - ecommerce, marketing, and productivity"
+title: "marin gerov - blog"
 ---
 <div class="introduction">
-  <h1>hi.</h1>
+  <h1>hi 👋</h1>
 
   <p>Here I share what's on my mind.</p>
+  <p><small><em>More about me <a href="/about">here</a>.</em></small></p>
 
-  <p>I am a marketer, turned software engineer, turned entrepreneur. Since 2011 I've been bulding communities, brands and websites on the internet. Throughout the years I've worked for big multinational companies, as well as startups in London, Berlin and Amsterdam. I am now building the brand and ecommerce platform for <a href="https://weardulo.com" target="_blank">DULO</a> - a direct to consumer apparel company where we sell performance dress shirts.</p>
+  <div class="toc">
+    <h2>Posts</h2>
+    <ul class="texts">
+    {% for item in site.texts reversed %}
 
-  <p>I am always curious to learn new things and improve. I geek out on topics around productivity, personal development, bio- and life-hacking, fitness, but also movies and the entertainment industry. I believe that one can make the biggest impact in the world through <a href="https://soulstone.co">storytelling</a>.</p>
-
-  <p>If you want to stay in the loop you can <a target="_blank" href="#">subscribe</a> to my list and I will send you an email when I write something new. Or you can check the <a target="_blank" href="#">RSS feed</a>.</p>
-</div>
-
-<hr>
-
-<div class="toc">
-  <h2>Posts</h2>
-  <ul class="texts">
-  {% for item in site.texts %}
-
-    <li class="text-title">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
+      <li class="text-title">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 </div>

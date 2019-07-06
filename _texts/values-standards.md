@@ -2,7 +2,7 @@
 layout: post
 title: "Values and Standards"
 author: Marin Gerov
-publication-date: 05-07-2016
+publication-date: 05-07-2019
 toc:
 - Title Page
 - Preface
