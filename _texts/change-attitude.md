@@ -7,7 +7,7 @@ publication-date: 02-07-2019
 
 ---
 
-If you want to change the attitude of others, change yours first.
+If you want to change the attitude of others, change your first.
 
 Case in point:
 
